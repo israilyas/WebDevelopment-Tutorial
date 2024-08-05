@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red blue green bg-red">
+        <div class="box">HEY I AM A BOX</div>
+    </div>
+    <script>
+        // INSERTION MEETHODS
+        let div = document.createElement("div")
+        div.innerHTML = "<b>I have been inserted </b>"
+        div.setAttribute("class", "created")
+        // document.querySelector(".container").append(div)   //append insert element inside the container at end
+        
+        document.querySelector(".container").prepend(div)   //append insert element inside the container at beggining
+
+        // document.querySelector(".container").before(div)   //append insert element before
+
+        // document.querySelector(".container").after(div)   //append insert element after
+
+// INSERT ADDITIONAL HTML/TEXT EELEMENT
+// FOR HTML --> insertAdjacentHTML
+
+
+
+        let cont = document.querySelector(".container")
+        // cont.insertAdjacentHTML("afterbegin","<b>Hello I am ISRA</b>")
+        // cont.insertAdjacentHTML("afterend","<b>Hello I am ISRA</b>")
+        // cont.insertAdjacentHTML("beforebegin","<b>Hello I am ISRA</b>")
+        cont.insertAdjacentHTML("beforeend","<b>Hello I am ISRA</b>")
+
+// n=NODE REMOVE 
+        let rem = document.querySelector(".box")
+        rem.remove()
+// CLASS-LIST , CLASS-NAME
+        let list = document.querySelector(".container").classList
+        console.log(list)
+
+        let list_name = document.querySelector(".container").className
+        console.log(list_name)
+
+        list.add("added")
+        console.log(list)
+
+        // list.remove("red")
+        // console.log(list)
+        list.contains("red") // checks whether class is pesent or not --> returns True/Flase
+        
+        //TOGGLE -> CLOSE IF OPEN --OPEN IF CLOSED
+        // list.toggle("red")
+    // </script>
+</body>
+
+</html>

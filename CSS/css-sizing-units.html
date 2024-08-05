@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*  VW and Vh Unit */
+        .box {
+            box-sizing: border-box;
+            width: 80vw;
+            /* height: 20vh; */
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: auto;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            width: 80vw;
+            /* height: 70vh; */
+            min-height: 80vh;
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: 23px auto;
+        }
+
+        /* Vmin Vmax */
+        /* laptop = Vmin => Height => Vh
+        Phone = Vmin => Width => VW 
+        
+        */
+        .container {
+            box-sizing: border-box;
+            width: 80vw;
+            background-color: aqua;
+            text-align: center;
+            border: 2px solid black;
+            margin: auto;
+        }
+        .box2>div{
+            width: 50%;
+            border: 2px solid black;
+        }
+        .box2>div>div{
+            width: 50%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime aperiam expedita asperiores iusto eos,
+        temporibus placeat quisquam blanditiis molestiae atque culpa odio, adipisci commodi, excepturi consequuntur
+        consequatur dolorum vitae inventore necessitatibus ab totam natus.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae consequuntur dolorum laborum voluptatum
+        reprehenderit repellat optio, voluptas quasi asperiores eveniet est rerum magni reiciendis omnis, praesentium
+        placeat minima excepturi accusantium. Amet dicta quam maiores.
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde cupiditate deserunt aliquam dicta natus neque, ex quam in fugit. Exercitationem itaque molestiae laborum soluta quasi blanditiis in praesentium, quia facilis illum modi atque eum delectus beatae pariatur ullam labore amet vel? Facere, iusto ducimus incidunt cum sed a et fugiat, blanditiis deserunt quaerat, maxime culpa qui voluptatem corrupti harum consequatur! Autem aspernatur dolores quam hic fugit aliquam labore sed Exercitationem
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nostrum quos, dolores impedit itaque ipsam. Animi dolor quo maxime cumque ut omnis eligendi.
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        I am container
+    </div>
+
+    <!-- <h1>Relative Units</h1>
+    <ul>
+        <li>em - Relative to the font size of the parent element. Eg: 5em means the size wlild be 5 times the current font size.</li>
+        <li>ex - Relative to X height of the existing font</li>
+        <li>ch - Relative to the width/ radius of the character “0”.</li>
+        <li>rem - Relative to the font size of the root element.</li>
+        <li>vw - Relative to 1% of the width of the viewport. (Viewport is the area of the wlisite visible to the user.)</li>
+        <li>vh -  Relative to 1% of the height of the viewport</li>
+        <li>% - Relative to the parent element’s size.</li>
+    </ul> -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* we canot set width and height in inline*/
+            /* display: inline; */
+            display: inline-block;
+            width: 500px;
+            background-color: blue;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px;  /*in  inline width, top margine  and top padding is not respected*/
+            padding: 45px;
+        }
+        .box1{
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<h1>Display Property</h1>
+<h3>Inline</h3>
+<h3>Block</h3>
+<h3>Inline-Block</h3>
+<h3>Display none</h3>
+<h3>Visibility Hidden</h3>
+<h3>Display FLex</h3>
+<h3>Inline FLex</h3>
+<h3>Display Grid</h3>
+<body>
+    <div class="box box1">
+        Lorem ipsum dolor,
+
+    </div>
+    <div class="box">
+        Lorem ipsum dolor,
+
+    </div>
+    <span class="box box2" >
+        Lorem ipsum dolor sit amet.
+    </span>
+</body>
+</html>

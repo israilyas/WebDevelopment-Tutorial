@@ -1,0 +1,27 @@
+*{
+    margin: 0;padding: 0;
+}
+.main{
+    background-image: url("asset/images/background.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 80vh; 
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.44;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    background-color: red;
+}

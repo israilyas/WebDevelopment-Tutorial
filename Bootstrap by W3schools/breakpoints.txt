@@ -1,0 +1,11 @@
+BREAKPOINT        CLASS INFIX       DIMENTIONS                                   SCREENS
+
+X-Small           None               <576px     (less than 576)                  for mobile 
+Small              sm                >= 576px   (min wid=576 max-wid=767)        for tabs
+Medium             md                >=768px    (min-wid= 768 , max-wid=991)     small laptop, 
+Large              lg                >=992px    (min-wid= 992, max-wid=1199)     desktop
+Extra Large        xl                >=1200px   (min-wid=1200, max-wid=1399)     desktop
+Extra Extra large  xxl               >=1400px    
+
+
+Normally bootstrap website width = 1170 -> lg screen

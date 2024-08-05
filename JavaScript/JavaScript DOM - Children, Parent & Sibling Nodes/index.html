@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX1</div>
+        <div class="box">BOX2</div>
+        <div class="box">BOX3</div>
+        <div class="box">BOX4</div>
+        <div class="box">BOX5</div>
+    </div>
+    <script src="script.js">
+        let cont = document.body.childnodes[1]
+        // cont.firstchild -->text
+        // cont.lastchild  -->text
+        //cont.firstElementchild  --> ignore text child --> gives only element child
+
+        //document.body.firstElementchild.ChildNodes (textnodes, comment, elements)
+
+        //document.body.firstElementchild.children (only html elements)  --> gives all child element of first element child of body and ignoe comment ant text nodes
+
+        // document.body.firstElementchild.children[1].nextElemenySibling  --> gives the next html element
+
+        // document.body.firstElementchild.children[1].previousElemenySibling  --> gives the previos html element
+
+        // document.body.firstElementchild.children[1].parentElement--> gives the parent html element
+
+        // document.body.childnodes
+        // document.body.childnodes[0]
+        // document.body.childnodes[1]
+        // document.body.childnodes[2]
+        // document.body.childnodes[2].childnodes
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-08</title>
+    <style>
+        .container {
+            position: relative;
+            background-color: blue;
+            width: 60vw;
+            height: 60vh;
+        }
+
+        .box {
+            width: 70px;
+            height: 70px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: bouncing-x 6s linear infinite,
+                bouncing-y 3s ease-out infinite alternate;
+                /* bouncing-y 3s ease-in-out infinite normal; */
+
+        }
+
+        @keyframes bouncing-x {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+
+        @keyframes bouncing-y {
+
+            0% {
+                bottom: 0%;
+            }
+
+            20% {
+                bottom: 60%;
+            }
+
+            60% {
+                bottom: 0%;
+            }
+ 
+            80% {
+                bottom: 60%;
+            }
+
+            100% {
+                bottom: 0%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+form{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.name{
+    flex:1 0 130px
+}
+.email{
+    flex:1 0 130px
+}
+.submit{
+    flex:1 0 40px
+}

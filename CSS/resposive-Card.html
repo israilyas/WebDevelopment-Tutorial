@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .training-section {
+            width: 100%;
+
+            /* background-color: bisque; */
+        }
+
+        .training-section h1 {
+            text-align: center;
+            /* padding:top-bottom left-right; */
+            padding: 25px 0;
+        }
+
+        .container {
+            width: 1170px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            align-content: center;
+            background-color: rgb(252, 244, 244);
+            margin: auto;
+            padding-bottom: 40px;
+        }
+
+        .training-items {
+            width: 20%;
+            background-color: white;
+            /* flex-basis: 23%; */
+            margin: 10px 0;
+            box-shadow: 0px 0px 10px 3px rgb(116, 105, 105);
+            text-align: center;
+            padding: 20px 0px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+
+        .training-items p {
+            font-size: 12px;
+            margin: 5px;
+            line-height: 20px;
+        }
+
+        .training-items h3 {
+            letter-spacing: 2px;
+            font-size: medium;
+            margin: 5px;
+        }
+
+        .training-items button {
+           padding: 6px 15px;
+           margin: 10px 0px;
+           border: none;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            font-weight: 300;
+        }
+
+        .training-items:hover { 
+            background-color: blue;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .training-items:hover button {
+            background-color: white;
+            color: blue;
+        }
+        @media only screen and (min-width:100px) and (max-width:767px){
+            .container {
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .training-items{
+
+                width: 60%;
+                height: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="training-section">
+        <h1>Our Training Courses</h1>
+        <div class="container">
+            <div class="training-items">
+                <img src="image/icons8-php-60.png" alt="">
+                <h3>PHP Web-Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur sunt, fuga maiores
+                    reiciendis cum cupiditate, ipsum porro, animi exercitationem iure debitis culpa.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-python-60.png" alt="">
+                <h3>Python Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laudantium odit voluptatibus iusto ad
+                    non cupiditate asperiores ex ullam atque aperiam, obcaecati nisi.</p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-android-60.png" alt="">
+                <h3>Android Developer</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo labore molestiae repudiandae sint
+                    excepturi nulla saepe, possimus vel accusantium nostrum, libero cum animi.</p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-hacker-60.png" alt="">
+                <h3>Ethical Hacking</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime placeat distinctio deserunt ea aut
+                    nisi perferendis illo nam! Quod dolorem exercitationem necessitatibus recusandae.</p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-php-60.png" alt="">
+                <h3>PHP Web-Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aspernatur sunt, fuga maiores
+                    reiciendis cum cupiditate, ipsum porro, animi exercitationem iure debitis culpa.
+                </p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-python-60.png" alt="">
+                <h3>Python Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla laudantium odit voluptatibus iusto ad
+                    non cupiditate asperiores ex ullam atque aperiam, obcaecati nisi.</p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-android-60.png" alt="">
+                <h3>Android Developer</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo labore molestiae repudiandae sint
+                    excepturi nulla saepe, possimus vel accusantium nostrum, libero cum animi.</p>
+                <button>Read More</button>
+            </div>
+            <div class="training-items">
+                <img src="image/icons8-hacker-60.png" alt="">
+                <h3>Ethical Hacking</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime placeat distinctio deserunt ea aut
+                    nisi perferendis illo nam! Quod dolorem exercitationem necessitatibus recusandae.</p>
+                <button>Read More</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

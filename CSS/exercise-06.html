@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 06</title>
+    <style>
+        .container {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: 85px;
+            margin-top: 30px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            /* align-content: center; */
+            /* justify-items: flex-end; */
+            /* align-items: flex-end; */
+        }
+
+        /* header ul{
+           
+        } */
+        .container li>a {
+            text-decoration: none;
+            padding: 10px;
+            color: rgb(74, 71, 71);
+        }
+
+        .container li {
+            list-style-type: none;
+        }
+        /* .logo-box{
+            display: flex;
+            justify-items: flex-start;
+            /* justify-content: flex-start; */
+            /* align-items: flex-end; 
+        } */
+
+        .logo {
+            position: fixed;
+            top: 33px;
+            left: 150px;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .image img {
+            position: fixed;
+            top: 10px;
+            left: 70px;
+            display: inline;
+            width: 60px;
+            margin: 10px;
+        }
+
+        .image-logo {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            box-shadow: 10px -5px 2px;
+            border: 1px solid white;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-box">
+                <span class="image">
+                    <img src="image/UltraEditLogo.png" alt="">
+                </span>
+                <span class="logo">
+                    UltraEdit
+                </span>
+            </div>
+            
+            <!-- <ul> -->
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Security and compliance</a></li>
+            <!-- </ul> -->
+            <div class="image-logo"></div>
+        </div>
+
+        <!-- <nav>
+           
+        </nav> -->
+    </header>
+</body>
+
+</html>

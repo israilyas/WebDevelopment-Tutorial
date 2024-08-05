@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .cards{
+            background-color: aqua;
+            border: 2px solid red;
+            display: flow-root;    /*adjust image overflow*/
+        }
+        .card{
+            border: 2px solid black;
+        }
+        img{
+            float: right;   
+        }
+        .card:nth-child(3){
+            background-color: rgb(185, 159, 210);
+            color: rgb(2, 22, 40);
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="image/car.jpg" alt="Image" width="300px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex nulla aperiam officia sit nam facilis minus! Tempore saepe quo soluta accusamus facere? Aliquid ex voluptatum eaque quam. Molestiae non odio consectetur cumque qui.</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit dignissimos beatae quo, perspiciatis ut alias earum animi maiores illo tenetur iusto at accusamus excepturi cum ullam eum omnis. Atque, rem cum. Illo neque libero mollitia quam? Quo, totam iste veniam adipisci molestias reprehenderit odit quod. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto eos aperiam quibusdam fugit aspernatur excepturi officia repellat voluptates. Et temporibus odit, est maxime totam quo enim accusantium itaque, in eveniet quidem minus iure voluptatibus earum mollitia? Illum ex laboriosam ad sunt optio modi earum, ipsum numquam in ea provident consequuntur cum quaerat esse est. Fuga odio pariatur nobis vitae natus. Tenetur, fugit. Sequi repellendus modi ab, animi ut numquam hic porro reprehenderit sint beatae mollitia, nostrum provident dolorem corrupti inventore ipsam! Vel mollitia ipsa autem tempora error ducimus, eaque quod perferendis eum, ullam dolores dolorem nesciunt sapiente laudantium aliquam quasi nostrum magni tenetur porro. Et dolor dolorem repellat, aut atque sequi eligendi debitis officiis distinctio perferendis nisi, vitae deserunt nihil maiores quaerat sed suscipit veniam! Magni, in dolore. Soluta, iusto exercitationem, vitae non facilis ratione dolorum veritatis amet reprehenderit atque labore dignissimos dolores voluptates nihil libero expedita deserunt perferendis saepe aut dolor temporibus laudantium est! Pariatur rerum illum quae reiciendis minima vel culpa molestias quia omnis, aliquam voluptates rem ullam magnam, eaque nihil ad in. Quo eum in repudiandae vero id impedit a rem ut iste accusamus consequuntur mollitia dignissimos odio natus consequatur recusandae, itaque error repellat non eaque accusantium.</div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ducimus ipsam odit repellat omnis est reprehenderit natus, vel quidem sunt id soluta repudiandae consequatur velit. Est expedita sunt voluptatum commodi. Quibusdam commodi excepturi non maiores, maxime et ex modi soluta mollitia, doloribus recusandae exercitationem error doloremque. Aperiam fugit rem mollitia cumque, qui eligendi consequuntur pariatur dolores.</div>
+    </div>
+</body>
+</html>

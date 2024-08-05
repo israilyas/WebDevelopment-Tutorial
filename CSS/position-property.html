@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 323px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        .box1 {
+            position: sticky;
+            top: 0;
+            /* position: absolute;
+            top: 0px; */
+            /* z-index: 1; */
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: rgb(187, 199, 106);
+            /* position: relative;
+            left: 80px;
+            top: -50px; */
+        }
+
+        .box3 {
+            background: #d59595;
+        }
+
+        .box4 {
+            background-color: purple;
+            /* position: absolute;
+            top: 0; */
+            /* position: fixed;
+            bottom: 0;
+            left: 20vw; */
+        }
+        .parent{
+            border: 5px solid purple;
+            margin: 45px;
+            padding: 45px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- By Default Position is Statistic -->
+    <!-- Position relative => Top , Bottom  -->
+    <!-- Z-Index Value -->
+    <!-- Absolute => Nearest Position Ancestor -->
+    <!-- Position Fixed => Stay fixed at that position -->
+    <!-- Position Sticky -->
+    <!-- Exception=>>> Transform , Filter , or Perspective Properties can also make an element appear as positioned -->
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

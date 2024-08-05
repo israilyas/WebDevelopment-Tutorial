@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selectors</title>
+    <style>
+        /* Univeersal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       /*ELement Selector*/
+       div{
+        background: #c45c5c;
+       }
+       /* Child Selectors */
+       div>p{
+        background: red;
+       }
+       /* decentend selector */
+       div p{
+        background: red;
+       }
+       /* class slector */
+       .red{
+        color: rgb(71, 15, 168);
+       }
+       /* id selector */
+       #myid{
+        background: #d8db23;
+       }
+       /* Pseudo Selectors */
+       a:link{
+         color: #f60000;
+       }
+       a:visited{
+        color: aqua;
+       }
+       a:active{
+        background-color: #e52e2e;
+       }
+       a:hover{
+        color: black;
+        background-color: aqua;
+       }
+       p:first-child{
+        background-color: aqua;
+        color: #e52e2e;
+       }
+    </style>
+</head>
+<body>
+    <div >
+        i am div
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores deleniti ullam magni veniam molestias esse voluptate placeat quasi et odit?</p>
+    </div>
+    <div class="red">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, soluta. Alias, dolore a, aliquam recusandae labore corrupti perferendis placeat eveniet expedita amet distinctio.</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sapiente. At, vitae possimus molestias tempore odit, repellat aliquid itaque porro distinctio autem inventore corporis repudiandae voluptas reprehenderit! Dolor, ipsum deleniti.
+    </div>
+    <div id="myid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci iste atque quo libero consequatur. Fugiat ab accusamus ullam consequuntur ea?</div>
+    <a href="https://google.com">Google.com</a>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quo, hic, perspiciatis expedita delectus esse consequuntur autem quisquam voluptatum optio fugit, doloribus suscipit?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo hic nemo eaque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat facere quae ipsa quia ipsum! Quas, sed. Iusto explicabo quisquam neque, qui ea quae quam.</p>
+
+    </div>
+</body>
+</html>

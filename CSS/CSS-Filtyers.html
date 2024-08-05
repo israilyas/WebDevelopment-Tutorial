@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Filters</title>
+    <style>
+        img{
+            /* filter: blur(5px); */
+            /* filter: drop-shadow(16px 16px 20px red) invert(75%); */
+        }
+        .img1{
+            /* filter: brightness(100%) contrast(3.5); */
+            filter: brightness(100%) contrast(150%);
+        }
+        .img2{
+            /* filter: invert(1); */
+            /* filter: drop-shadow(20px); */
+            filter: opacity(0.2);
+        }
+        .img3{
+            /* filter: grayscale(50%); */
+            filter: sepia(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.gadgets360.com/content/assets/entertainment/shah-rukh-khan-poster.jpg" alt="" class="img1" style="width: 500px;">
+        <img class="img2" src="https://www.thestatesman.com/wp-content/uploads/2019/06/srk-2.jpg" alt="">
+        <img class="img3" src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/akshay-kumar-94-1681713982.jpg" alt="" style="width: 500px;">
+    </div>
+</body>
+</html>

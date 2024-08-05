@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            color: rgb(242, 246, 9);
+         } */
+        /* .box::first-line {
+            background-color: #9c89dd;
+        } */
+        .boxes *{
+            color: rgb(233, 233, 235);
+            background-color: #4f3636;
+            border: 2px solid rgb(14, 14, 14);
+            padding: 10px;
+            margin: 10px;
+        }
+        /* 
+        [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        }
+        /*Grouping*/
+        /* h1,p,a,.box,[data-color="primary"]{
+            background-color: rgb(59, 52, 52);
+            color: aliceblue;
+           
+        } */
+        /* .box:nth-child(odd){
+            background-color: blueviolet;
+            color: black;
+        } */
+        .box:nth-last-child(4){
+            background-color: blueviolet;
+            color: black;
+        }
+        .boxes::before{
+            content: "I am a Good Girl";
+            font-weight: bolder;
+            background-color: rgb(141, 83, 196);
+            border: 2px solid  rgb(45, 3, 84);
+        }
+        .boxes::after{
+            content: "Okay Good Bye Guys";
+            font-weight: bolder;
+            background-color: rgb(141, 83, 196);
+            border: 2px solid  rgb(45, 3, 84);
+        }
+        ::selection{
+            color: rgb(155, 0, 0);
+            background-color: #ffffff;
+        }
+        .box::first-letter{
+            color: blue;
+            font-size: 20px;
+        }
+        input::placeholder{
+            font-weight: bolder;
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">I am a box </div>
+        <div data-color="primary" class="box">I am a box </div>
+        <div class="box">I am a box Lorem, </div>
+        <div class="box">I am a box Lorem, ipsum </div>
+        <div class="box">I am a box Lorem, ipsum dolor sit </div>
+        <div class="box">I am a box Lorem, ipsum dolor sit amet </div>
+        <input type="text" placeholder="Enter your name:">
+    </div>
+</body>
+
+</html>

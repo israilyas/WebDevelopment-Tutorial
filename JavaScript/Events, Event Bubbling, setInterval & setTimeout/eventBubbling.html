@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .childcontainer {
+            background-color: yellow;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            background-color: blue;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">
+                I am a child
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("CHild was clicked")
+        })
+        document.querySelector(".childcontainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("CHildContainer was clicked")
+        })
+        document.querySelector(".container").addEventListener("click", () => {
+            alert("Container was clicked")
+        })
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255)
+            let val2 = Math.ceil(0 + Math.random() * 255)
+            let val3 = Math.ceil(0 + Math.random() * 255)
+            return `rgb(${val1}, ${val2}, ${val3})`
+
+        }
+        //setInterval --> epeat given task after a given time
+
+        // let a =  setInterval(() => {
+        //     document.querySelector(".childcontainer").style.background = getRandomColor();
+        // }, 300)
+        // clearInterval(a)
+        // clearInterval --> use number in setInterval and clear that interval/stop
+
+        //setTimeout--> perform only 1 time
+        let b = setTimeout(() => {
+            document.querySelector(".childcontainer").style.background = getRandomColor();
+        }, 2000)
+        clearTimeout(b)
+        //   clearTimeout --> use number in   setTimeout and clear that interval/stop
+
+
+
+
+    </script>
+    <script src="settime_setinterval.js"></script>
+    <!-- when we set event listne to any element -- then  listners of that element will be activated as well  as its parent's and grand parent's -->
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Animations</title>
+    <style>
+    .container{
+      background-color: aquamarine;
+      width: 30vw;
+      height: 80vh;
+    }
+    .box{
+      width: 34px;
+      height: 34px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 70px;
+      animation-name: animation;
+      animation-duration: 3s;
+      position: relative;
+      /* animation-iteration-count: 3; */
+      /* animation-iteration-count: infinite;
+      animation-timing-function: ease-in;
+      animation-delay: 3s; */
+      /* animation-direction:; */
+      /* animation-direction: reverse;
+      animation-play-state: paused; */
+      /* animation-play-state: running; */
+
+      /* ANimation-Shorthand */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: animation 3s ease-out 2s alternate forwards, 
+                           my-animation 3s ease-out 2s alternate forwards;
+    }
+    @keyframes animation{
+        from{
+            background-color: black;
+            border-radius: 10px;
+            top: 0%;
+        }
+        to{
+            transform: translate(1000px);
+            background-color: purple;
+            border-radius: 180px;
+            bottom: 0%;
+        }
+    }
+    /* @keyframes my-animation {
+        0%{
+            transform: rotate(40deg);
+        }
+        20%{
+            transform: rotate(80deg);
+        }
+        50%{
+            transform: rotate(120deg);
+        }
+        80%{
+            transform: rotate(160deg);
+        }
+        100%{
+            transform: rotate(180deg);
+        }
+    } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execise-07</title>
+    <style>
+        @media only screen and (max-width:800px){
+            .container{
+                background-color: rgb(19, 16, 16);
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: auto;
+                justify-content: center;
+            }
+            .box1, .box3, .box5, .box7, .box9{
+                grid-column: auto;
+            }
+            .box2, .box4, .box6, .box8, .box10{
+                grid-column: auto;
+            }
+        }
+
+      
+        .logo {
+            height: 20px;
+            width: 40px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            /* padding: 30px; */
+            /* background-color: blue; */
+        }
+
+        .logo img {
+            width: 50px;
+            margin-left: 80px;
+        }
+
+        .title {
+            margin: 10px 20px;
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .right ul {
+            display: flex;
+            margin-right: 100px;
+        }
+
+        .right ul li {
+            list-style: none;
+            padding: 8px 20px;
+            /* margin-right: 20px; */
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            row-gap: 40px;
+            column-gap: 100px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin: 50px;
+        }
+
+        .box {
+            text-align: center;
+        }
+        .box p{
+            font-size: 12px;
+            line-height: normal;
+            /* margin-bottom: 10px; */
+        }
+        .box h3{
+            /* line-height: normal; */
+        }
+
+        .box1 {
+            grid-column: 1/2;
+        }
+
+        .box2 {
+            grid-column: 2/3;
+        }
+
+        .box3 {
+            grid-column: 3/4;
+        }
+
+        .box4 {
+            grid-column: 1/2;
+        }
+
+        .box5 {
+            grid-column: 2/3;
+        }
+
+        .box6 {
+            grid-column: 3/4;
+        }
+
+        .box7 {
+            grid-column: 1/2;
+        }
+
+        .box8 {
+            grid-column: 2/3;
+        }
+
+        .box9 {
+            grid-column: 3/4;
+        }
+
+        .box10 {
+            grid-column: 1/2;
+        }
+        .links{
+            display: flex;
+            width: 20vw;
+            justify-content:space-between;
+        }
+        .link1{
+            background-color: rgb(60, 157, 216);
+            height: 35px;
+            width: 120px;
+            font-size: 17px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 6px;
+            box-sizing: border-box;
+            border-radius: 8%;
+        }
+        .link2{
+            background-color: rgb(89, 224, 109);
+            height: 35px;
+            width: 120px;
+            font-size: 17px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 6px;
+            box-sizing: border-box;
+            border-radius: 8%;
+        }
+        .box a{
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            margin:10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="image">
+                    <img src="image/UltraEditLogo.png" alt="">
+                </span>
+                <span class="title">
+                    UltraEdit
+                </span>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resouces</li>
+                    <li>About Us</li>
+                    <li>Security and compliance</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box box1">
+                <h3>English</h3>
+                <p>English</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box2">
+                <h3>Deutsch</h3>
+                <p>German</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box3">
+                <h3>Italiano</h3>
+                <p>Italian</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box4">
+                <h3>Español</h3>
+                <p>Spanish</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box5">
+                <h3>français</h3>
+                <p>French</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box6">
+                <h3>Português brasileiro</h3>
+                <p>Brazilian Portuguese</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box7">
+                <h3>日本</h3>
+                <p>Japanese</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box8">
+                <h3>한국어</h3>
+                <p>Korean</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box9">
+                <h3>中国</h3>
+                <p>Chinese</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+            <div class="box box10">
+                <h3>中國</h3>
+                <p>Traditional Chinese</p>
+                <div class="links">
+                    <div class="link1"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                    <div class="link2"><a href="ue_english.exe" ">Download 32-bit</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
